@@ -42,7 +42,7 @@ function guardarDB(db) {
 }
 
 const app = express();
-const PORT = 3007;
+const PORT = 3000;
 
 const UPLOADS_DIR = path.join(__dirname, 'uploads');
 const ARCHIVOS_DIR = path.join(__dirname, 'data', 'archivos');
