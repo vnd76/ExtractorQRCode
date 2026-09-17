@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Extractor de QR desde PDF</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Extractor de QR</h1>
+    <p class="sub">Sube un PDF que contenga un código QR. Se extraerá automáticamente y quedará válido por 21 días desde
+      ahora.</p>
+
+    <div class="drop-zone" id="drop-zone">
+      Arrastra un PDF aquí,<br>o haz clic para elegirlo
+    </div>
+    <input type="file" id="pdf-input" accept="application/pdf">
+    <p class="file-name" id="file-name"></p>
+
+    <button id="extract-btn" disabled>Extraer QR</button>
+    <p class="error-msg" id="error-msg"></p>
+
+    <div class="result" id="result">
+      <div id="qrcode"></div>
+      <div class="status-row">Contenido extraído: <span id="result-contenido"></span></div>
+      <div class="status-row">Página del PDF: <span id="result-pagina"></span></div>
+      <p class="validity-note" id="validity-note"></p>
+      <p class="validity-note" id="url-note"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
